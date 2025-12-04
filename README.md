@@ -1,0 +1,2 @@
+# min.dashboard
+minimalistic dashboard
