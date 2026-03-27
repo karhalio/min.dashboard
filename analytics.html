@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аналитика</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="logo-text">Dashboard</span>
+        </div>
+        <button class="collapse-btn" type="button" aria-label="Свернуть или развернуть боковое меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="nav-section">
+        <div class="nav-label">Основное</div>
+        <a href="index.html" class="nav-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="3" y="3" width="7" height="7"/>
+            <rect x="14" y="3" width="7" height="7"/>
+            <rect x="3" y="14" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/>
+          </svg>
+          <span class="nav-item-text">Обзор</span>
+        </a>
+        <a href="Analytics.html" class="nav-item active">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 20V10M18 20V4M6 20v-4"/>
+          </svg>
+          <span class="nav-item-text">Аналитика</span>
+        </a>
+
+        <div class="nav-group">
+          <a href="#" class="nav-item nav-group-toggle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+            </svg>
+            <span class="nav-item-text">Документы</span>
+          </a>
+          <div class="nav-submenu">
+            <a href="#" class="nav-item">
+              <span class="nav-item-text">Все файлы</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-item-text">Загрузки</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-item-text">Архив</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="nav-item">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+            <circle cx="9" cy="7" r="4"></circle>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+          </svg>
+          <span class="nav-item-text">Пользователи</span>
+          <span class="nav-badge">12</span>
+        </a>
+
+        <div class="nav-label">Настройки</div>
+        <div class="nav-group">
+          <a href="#" class="nav-item nav-group-toggle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            <span class="nav-item-text">Настройки</span>
+          </a>
+          <div class="nav-submenu">
+            <a href="#" class="nav-item">
+              <span class="nav-item-text">Общие</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-item-text">Безопасность</span>
+            </a>
+            <a href="#" class="nav-item">
+              <span class="nav-item-text">Уведомления</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#" class="nav-item">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01"></path>
+          </svg>
+          <span class="nav-item-text">Помощь</span>
+        </a>
+      </nav>
+    </aside>
+
+    <header class="header">
+      <div class="header-left">
+        <button class="icon-btn menu-toggle" type="button" aria-label="Открыть или закрыть мобильное меню">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="M21 21l-4.35-4.35"></path>
+          </svg>
+          <input type="text" placeholder="Поиск...">
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Переключить тему">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3c.35 0 .7.02 1.04.07A7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="icon-btn" type="button" aria-label="Создать">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 5v14M5 12h14"/>
+          </svg>
+        </button>
+        <button class="icon-btn" type="button" aria-label="Профиль">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main class="main analytics-main">
+      <div class="page-header">
+        <h1 class="page-title">Аналитика</h1>
+        <div class="page-actions">
+          <button class="btn btn-secondary" type="button">Последние 7 дней</button>
+          <button class="btn btn-primary" type="button">Обновить данные</button>
+        </div>
+      </div>
+
+      <section class="analytics-filters card">
+        <button class="analytics-chip active" type="button" data-filter="all">Все источники</button>
+        <button class="analytics-chip" type="button" data-filter="organic">Органика</button>
+        <button class="analytics-chip" type="button" data-filter="ads">Реклама</button>
+        <button class="analytics-chip" type="button" data-filter="referrals">Рефералы</button>
+        <button class="analytics-chip" type="button" data-filter="email">Email</button>
+      </section>
+
+      <section class="stats-grid analytics-kpi-grid">
+        <article class="card stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 3v18h18"></path>
+                <path d="M18 9l-5 5-3-3-4 4"></path>
+              </svg>
+            </div>
+            <span class="stat-change positive" id="kpi-sessions-change">+18.4%</span>
+          </div>
+          <div class="stat-value" id="kpi-sessions-value">38,920</div>
+          <div class="stat-label">Сеансы</div>
+        </article>
+        <article class="card stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+            </div>
+            <span class="stat-change negative" id="kpi-duration-change">-4.1%</span>
+          </div>
+          <div class="stat-value" id="kpi-duration-value">01:46</div>
+          <div class="stat-label">Средняя сессия</div>
+        </article>
+        <article class="card stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <span class="stat-change positive" id="kpi-users-change">+6.7%</span>
+          </div>
+          <div class="stat-value" id="kpi-users-value">9,280</div>
+          <div class="stat-label">Уникальные пользователи</div>
+        </article>
+        <article class="card stat-card">
+          <div class="stat-header">
+            <div class="stat-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <span class="stat-change positive" id="kpi-revenue-change">+11.3%</span>
+          </div>
+          <div class="stat-value" id="kpi-revenue-value">₽468,120</div>
+          <div class="stat-label">Выручка</div>
+        </article>
+      </section>
+
+      <section class="analytics-grid">
+        <article class="card analytics-card-wide">
+          <div class="card-header">
+            <div class="card-title">Тренд конверсии по дням</div>
+            <a href="#" class="card-action">Показать детально →</a>
+          </div>
+          <div class="analytics-line-chart">
+            <div class="line-point" style="left: 4%; top: 68%"></div>
+            <div class="line-point" style="left: 16%; top: 62%"></div>
+            <div class="line-point" style="left: 28%; top: 58%"></div>
+            <div class="line-point" style="left: 40%; top: 44%"></div>
+            <div class="line-point" style="left: 52%; top: 48%"></div>
+            <div class="line-point" style="left: 64%; top: 36%"></div>
+            <div class="line-point" style="left: 76%; top: 31%"></div>
+            <div class="line-point" style="left: 88%; top: 24%"></div>
+            <div class="line-segment s1"></div>
+            <div class="line-segment s2"></div>
+            <div class="line-segment s3"></div>
+            <div class="line-segment s4"></div>
+            <div class="line-segment s5"></div>
+            <div class="line-segment s6"></div>
+            <div class="line-segment s7"></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">Каналы трафика</div>
+          </div>
+          <div class="channel-list" id="channel-list"></div>
+        </article>
+
+        <article class="card">
+          <div class="card-header">
+            <div class="card-title">Воронка продаж</div>
+          </div>
+          <div class="funnel">
+            <div class="funnel-step step-1"><span id="funnel-step-1">Посещение сайта — 100%</span></div>
+            <div class="funnel-step step-2"><span id="funnel-step-2">Просмотр товара — 67%</span></div>
+            <div class="funnel-step step-3"><span id="funnel-step-3">Добавили в корзину — 34%</span></div>
+            <div class="funnel-step step-4"><span id="funnel-step-4">Оплата — 19%</span></div>
+          </div>
+        </article>
+
+        <article class="card analytics-card-wide">
+          <div class="card-header">
+            <div class="card-title">Топ страниц по просмотрам</div>
+            <a href="#" class="card-action">Экспорт CSV →</a>
+          </div>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Страница</th>
+                  <th>Просмотры</th>
+                  <th>Конверсия</th>
+                  <th>Отказы</th>
+                </tr>
+              </thead>
+              <tbody id="top-pages-body">
+                <tr>
+                  <td>/pricing</td>
+                  <td>8,124</td>
+                  <td><span class="status active">6.4%</span></td>
+                  <td>24%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
